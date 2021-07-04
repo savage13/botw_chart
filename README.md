@@ -1,21 +1,20 @@
 Breath of the Wild Speedrun Charts
 ----------------------------------
 
-Single page chart displaying the time progression
-of speedruns for the Legend of Zelda: Breath of the Wild.
+Single page chart displaying the time progression of speedruns for the Legend of Zelda: Breath of the Wild.
 
-Data is obtained from speedrun.com/botw/ and the associated API.
+Data is obtained from [Speedrun BotW](https://speedrun.com/botw/) and the associated [API](https://github.com/speedruncomorg/api).
 
 Setup
 -----
 
-   # Create the "site"
-   npm install
-   npm run build
+    # Create the "site"
+    npm install
+    npm run build
 
-   # Get the data
-   #   - curl needs to be installed and in the path
-   ./get_data.py -a -p -f all
+    # Get the data
+    #   curl needs to be installed and in the path
+    ./get_data.py -a -p -f all
 
 Categories
 ----------
