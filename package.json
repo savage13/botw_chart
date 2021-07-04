@@ -1,0 +1,34 @@
+{
+  "name": "botw",
+  "version": "1.0.0",
+  "description": "Hi",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup-pages.config.js",
+    "dev": "rollup -w -c rollup-pages.config.js",
+    "start": "HOST=localhost  sirv public ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "BSD",
+  "dependencies": {
+    "chart.js": "^3.3.2",
+    "chartjs-adapter-luxon": "^1.0.0",
+    "chartjs-plugin-zoom": "^1.0.1",
+    "luxon": "^1.27.0",
+    "sirv-cli": "^1.0.12",
+    "svelte-chartjs": "^1.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.51.2",
+    "rollup-plugin-analyzer": "^4.0.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "sirv": "^1.0.12",
+    "svelte": "^3.38.2"
+  }
+}
