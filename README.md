@@ -1,7 +1,8 @@
 Breath of the Wild Speedrun Charts
 ----------------------------------
 
-Single page chart displaying the time progression of speedruns for the Legend of Zelda: Breath of the Wild.
+Single page "serverless" chart displaying the time progression of speedruns for the Legend of Zelda: Breath of the Wild.
+All files and data for a particular category are fetched on page load.
 
 Data is obtained from [Speedrun BotW](https://speedrun.com/botw/) and the associated [API](https://github.com/speedruncomorg/api).
 
@@ -14,7 +15,14 @@ Setup
 
     # Get the data
     #   curl needs to be installed and in the path
+    #     -a  - Get all data (creates ${cat}.json and ${cat}2.json
+    #     -p  - Get/Update player data (creates player.json and player2.json)
+    #     -f  - Filters/Removes data unnecessary to the page construction
+    #     all - Get all the categories
     ./get_data.py -a -p -f all
+    
+    # Run Development site locally
+    npm run dev 
 
 Categories
 ----------
